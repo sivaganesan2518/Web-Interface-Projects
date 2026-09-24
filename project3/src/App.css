@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: white;
+}
+
+.main-container {
+  width: 90%;
+  margin: 25px auto;
+  padding: 30px;
+  background-color: #d3d3d3;
+  border: 2px solid #333;
+  border-radius: 12px;
+}
+
+/* NAME + CYBER SECURITY BOX */
+.cyber-box {
+  width: 70%;
+  margin: 30px auto;
+  padding: 25px;
+  text-align: center;
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.cyber-box h1 {
+  color: blue;
+  font-size: 40px;
+  margin: 0 0 15px;
+}
+
+.cyber-box p {
+  font-size: 22px;
+  margin: 0;
+}
+
+/* ABOUT ME BOX */
+.about-box {
+  width: 80%;
+  margin: 40px auto;
+  padding: 25px;
+  text-align: center;
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.about-box h2 {
+  color: green;
+  font-size: 28px;
+}
+
+.about-box p {
+  font-size: 20px;
+}
+
+/* SKILLS + CONTACT */
+.bottom-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* SEPARATE BOX */
+.box {
+  width: 35%;
+  padding: 25px;
+  background-color: white;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.box h2 {
+  color: green;
+  text-align: center;
+  font-size: 28px;
+}
+
+.box li {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.box p {
+  font-size: 18px;
+  margin: 20px;
+}
+
+.footer {
+  margin-top: 50px;
+  font-size: 20px;
+}
+body {
+  font-family: Arial;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.hobby-container {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  width: 240px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h2 {
+  margin: 15px 0 10px;
+}
+
+.card p {
+  color: gray;
+}
