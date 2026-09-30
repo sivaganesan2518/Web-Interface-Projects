@@ -1,8 +1,9 @@
-import App from './project.jsx';
+import Pro from './project.jsx';
 
-function (){
-  return(
-    <App/>
+function App() {
+  return (
+    <Pro />
   );
 }
-export default app;
+
+export default App;

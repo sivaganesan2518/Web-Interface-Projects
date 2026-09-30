@@ -1,6 +1,6 @@
 import "./App.css";
 
-function App() {
+function Pro() {
   return (
     <div className="main-container">
 
@@ -9,7 +9,6 @@ function App() {
         <p>CSE Cyber Security Student</p>
       </div>
 
-
       <div className="about-box">
         <h2>About Me</h2>
         <p>
@@ -17,7 +16,6 @@ function App() {
         </p>
       </div>
 
-  
       <div className="bottom-container">
 
         <div className="box">
@@ -48,4 +46,4 @@ function App() {
   );
 }
 
-export default App;
+export default Pro;

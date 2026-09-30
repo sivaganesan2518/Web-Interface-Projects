@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./attendance.css";
-
 function Project2() {
 
   const initialStudents = [
