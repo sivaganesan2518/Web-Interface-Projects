@@ -24,52 +24,53 @@ jobs:
           node-version: 20
 
       - name: Build Project 3
-  run: |
-    cd project3
-    npm install
-    npm run build -- --base=/Web-Interface-Projects/project3/
+        working-directory: project3
+        run: |
+          npm install
+          npm run build -- --base=/Web-Interface-Projects/project3/
 
       - name: Build Project 4
+        working-directory: project4
         run: |
-          cd project4
           npm install
           npm run build -- --base=/Web-Interface-Projects/project4/
-      
+
       - name: Build Project 5
+        working-directory: project5
         run: |
-          cd project5
           npm install
           npm run build -- --base=/Web-Interface-Projects/project5/
-      
+
       - name: Build Project 6
+        working-directory: project6
         run: |
-          cd project6
           npm install
           npm run build -- --base=/Web-Interface-Projects/project6/
-      
+
       - name: Build Project 7
+        working-directory: project7
         run: |
-          cd project7
           npm install
           npm run build -- --base=/Web-Interface-Projects/project7/
-      
+
       - name: Build Project 8
+        working-directory: project8
         run: |
-          cd project8
           npm install
           npm run build -- --base=/Web-Interface-Projects/project8/
-      
+
       - name: Build Project 9
+        working-directory: project9
         run: |
-          cd project9
           npm install
           npm run build -- --base=/Web-Interface-Projects/project9/
-      
+
       - name: Build Project 10
+        working-directory: project10
         run: |
-          cd project10
           npm install
           npm run build -- --base=/Web-Interface-Projects/project10/
+
       - name: Prepare website
         run: |
           mkdir -p public/project3
@@ -116,5 +117,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-        
