@@ -22,55 +22,91 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
+      # =========================
+      # Build Project 3
+      # =========================
       - name: Build Project 3
         working-directory: project3
         run: |
           npm install
+          chmod +x node_modules/.bin/vite
           npm run build -- --base=/Web-Interface-Projects/project3/
 
+      # =========================
+      # Build Project 4
+      # =========================
       - name: Build Project 4
         working-directory: project4
         run: |
           npm install
+          chmod +x node_modules/.bin/vite
           npm run build -- --base=/Web-Interface-Projects/project4/
 
+      # =========================
+      # Build Project 5
+      # =========================
       - name: Build Project 5
         working-directory: project5
         run: |
           npm install
+          chmod +x node_modules/.bin/vite
           npm run build -- --base=/Web-Interface-Projects/project5/
 
+      # =========================
+      # Build Project 6
+      # =========================
       - name: Build Project 6
         working-directory: project6
         run: |
           npm install
+          chmod +x node_modules/.bin/vite
           npm run build -- --base=/Web-Interface-Projects/project6/
 
+      # =========================
+      # Build Project 7
+      # =========================
       - name: Build Project 7
         working-directory: project7
         run: |
           npm install
+          chmod +x node_modules/.bin/vite
           npm run build -- --base=/Web-Interface-Projects/project7/
 
+      # =========================
+      # Build Project 8
+      # =========================
       - name: Build Project 8
         working-directory: project8
         run: |
           npm install
+          chmod +x node_modules/.bin/vite
           npm run build -- --base=/Web-Interface-Projects/project8/
 
+      # =========================
+      # Build Project 9
+      # =========================
       - name: Build Project 9
         working-directory: project9
         run: |
           npm install
+          chmod +x node_modules/.bin/vite
           npm run build -- --base=/Web-Interface-Projects/project9/
 
+      # =========================
+      # Build Project 10
+      # =========================
       - name: Build Project 10
         working-directory: project10
         run: |
           npm install
+          chmod +x node_modules/.bin/vite
           npm run build -- --base=/Web-Interface-Projects/project10/
 
+      # =========================
+      # Prepare GitHub Pages
+      # =========================
       - name: Prepare website
         run: |
           mkdir -p public/project3
@@ -96,14 +132,23 @@ jobs:
           cp -r project9/dist/* public/project9/
           cp -r project10/dist/* public/project10/
 
+      # =========================
+      # Setup GitHub Pages
+      # =========================
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # =========================
+      # Upload Website
+      # =========================
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
+  # =========================
+  # Deploy
+  # =========================
   deploy:
     environment:
       name: github-pages
